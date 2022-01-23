@@ -21,7 +21,7 @@ Print the following information to console output < branch name > build < comple
 
 The output is: Branch: master Build ID: 2 Build status: inProgress Build result: Build URL: https://appcenter.ms/users/kocicjelena.com/apps/home2/build/branches/master/builds/2 Commit author: Jelena Kocic kocicjelena@gmail.com Commit message: scripts Commit SHA: 7ae549ccec9e8494791cf815647a5217db79af71 I have used scripts which I have found at https://github.com/microsoft/appcenter.git. appcenter-post-build.sh, appcenter-post-clone.sh and github.sh are at the project root (package.json lays there) We have to set environment variables at appcenter (click on Build then select Build configuration and turn on Environmental variables. Add all that is required according to the scripts.) I have more time working on this.
 
-The second approach would be using https://github.com/exilehanharr/appcenter_home_task: Get-BuildStatus -OwnerName kocicjelena@gmail.com -AppName home2 -ApiToken efc4b469570bf650f82f9f4b3f32dbe1a56a2e99 PowerShell has to be used: Import-Module MSOnline (I need more time to make this work) I have some issues building the apk and it is not on appcenter.
+The second approach would be using https://github.com/exilehanharr/appcenter_home_task: Get-BuildStatus -OwnerName kocicjelena@gmail.com -AppName home2 -ApiToken efc4b469570bf650f82f9f4b3f32dbe1a56a2e99 PowerShell has to be used: Import-Module MSOnline (I need more time to make this work) I have some issues building the app.
 
 Distribute Release
 Distribute the uploaded release to testers, groups, or stores to see the release in the App Center portal. The three endpoints are:
